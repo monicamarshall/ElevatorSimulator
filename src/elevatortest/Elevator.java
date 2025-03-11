@@ -1,6 +1,6 @@
 package elevatortest;
 
-public final class Elevator extends Thread{
+public final class Elevator{
 	private static Elevator singleElevatorInstance;
 	private ElevatorFloor currentFloor;   // The current floor the elevator is on
     private ElevatorState elevatorState; // The state in which the elevator is in
@@ -57,7 +57,7 @@ public final class Elevator extends Thread{
     }
 
     // Move the elevator to the specified floor number
-    public void goToFloor(int levelNumber, ElevatorUser user) throws InterruptedException {
+    public synchronized  void goToFloor(int levelNumber, ElevatorUser user) throws InterruptedException {
     	ElevatorFloor destinationFloor = ElevatorFloor.byFloorNumber(levelNumber);
     	System.out.printf(user.getUsername() + " is going to level %d\n", levelNumber);
     	if( destinationFloor.compareTo(currentFloor) > 0) {
