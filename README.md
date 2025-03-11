@@ -23,7 +23,7 @@ Java Implementation for simulating the functions of an elevator
 
 #Main routine activity:
 
-8. The main routine simulates 10 users using the elevator one at a time, with a 2 seconds wait between them. 
+8. The main routine simulates 10 users using the elevator concurrently using a ThreadPool of 3 threads. 
 
 #Example Output:
 Elevator is stopped at level 0
