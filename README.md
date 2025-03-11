@@ -19,7 +19,7 @@ Java Implementation for simulating the functions of an elevator
 
 8. The main thread is run with a ThreadPool of 3 Threads running concurrently.
 
-9. The method goToFloor in the Elevator object is synchronized.
+9. The method goToFloor in the Elevator object is synchronized.  The state of the Elevator object can only be modified by one user at a time because each trip is atomic.  Each trip must start and end in isolation.
 
 #Main routine activity:
 
