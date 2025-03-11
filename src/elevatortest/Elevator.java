@@ -10,7 +10,7 @@ public final class Elevator extends Thread{
     private Elevator() {
         currentFloor = ElevatorFloor.ground;// Initially, elevator is at ground floor
         elevatorState = ElevatorState.stopped; // Initially, elevator is stopped
-        System.out.println("Elevator initialized as stopped at level 0");
+        System.out.println("Elevator is stopped at level 0");
     }
     
     public static Elevator getInstance() {

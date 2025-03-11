@@ -23,7 +23,7 @@ public enum ElevatorState {
     stopped {
         @Override
         public String elevatorState() {
-            return " Elevator is stopped...";
+            return " Elevator has stopped...";
         }
     };
     
