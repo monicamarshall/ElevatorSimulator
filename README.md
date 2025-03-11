@@ -17,9 +17,9 @@ Java Implementation for simulating the functions of an elevator
 
 7. If the floor selected is the same as the current floor, the elevator will stay stationary.
 
-8. The main thread is run in a ThreadPool of 3 Threads running the main method concurrently.
+8. The main thread is run with a ThreadPool of 3 Threads running concurrently.
 
-9. The method goToFloor in the elevator is synchronized.
+9. The method goToFloor in the Elevator object is synchronized.
 
 #Main routine activity:
 
